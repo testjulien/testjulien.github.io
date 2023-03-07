@@ -36,7 +36,7 @@ const player = document.querySelector('#audioPlayer');
 btnStart.addEventListener("click", function () {
     event.preventDefault()
 
-    leTemp = duree.value
+    let leTemp = duree.value
     refresh(leTemp)
 
 if (mode.value>0) {
