@@ -1,4 +1,4 @@
 # testjulien.github.io
 
-## TEST [test](test.json)
+## TEST [test](https://raw.githubusercontent.com/testjulien/testjulien.github.io/main/test.json)
 
