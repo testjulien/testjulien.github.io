@@ -1,0 +1,18 @@
+@use '../components/mixin';
+
+.mobile {
+
+    &__informations{
+        
+    color: white;
+    padding: 1.5rem;
+    padding-top: 0.5;
+    background-color: rgb(59, 59, 59);
+    @include mixin.large {
+    display: none;
+  }
+
+}
+
+}
+

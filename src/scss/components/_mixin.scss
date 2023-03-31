@@ -1,0 +1,7 @@
+@mixin large {
+    @media screen and (min-width: 1250px) {
+      @content;
+    }
+  }
+
+

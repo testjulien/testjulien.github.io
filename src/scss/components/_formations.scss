@@ -1,0 +1,33 @@
+@use '../components/mixin';
+.formation {
+
+    background-color: rgb(242, 231, 231);
+    color: rgb(59, 59, 59);
+    
+    padding: 1.5rem;
+    @include mixin.large {
+        min-width: 30em;
+        height: 48rem;
+    }
+    &__list {
+        font-size: 1em;
+        padding-right: 1.5rem;
+    }
+    &__section {
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    &__flex {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        @include mixin.large {
+            flex-direction: row;
+        }
+    }
+    }
+.formationMobile{
+    @include mixin.large {
+        display: none;
+    }
+}

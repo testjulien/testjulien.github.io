@@ -1,0 +1,24 @@
+{
+  "name": "cv-html",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "clear": "rm -rf .parcel-cache dist",
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "reset-css": "^5.0.1",
+    "sass": "^1.60.0"
+  }
+}

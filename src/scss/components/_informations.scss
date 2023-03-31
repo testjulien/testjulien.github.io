@@ -1,0 +1,29 @@
+@use '../components/mixin';
+
+.information {
+   
+    min-height: 49rem;
+    width: 35%;
+    padding: 1rem;
+    padding-top: 0.5;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    @include mixin.large {
+        width: 67%;
+    }
+    &__style {
+        font-size: 1.1em;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        @include mixin.large {
+            display: block;
+        }
+    }
+    &__list {
+        @include mixin.large {
+            display: none;
+        }
+    }
+
+}
