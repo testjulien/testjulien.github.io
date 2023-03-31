@@ -5,10 +5,7 @@
     color: rgb(59, 59, 59);
     
     padding: 1.5rem;
-    @include mixin.large {
-        min-width: 30em;
-        height: 48rem;
-    }
+
     &__list {
         font-size: 1em;
         padding-right: 1.5rem;
@@ -21,13 +18,9 @@
         margin-top: 2em;
         display: flex;
         flex-direction: column;
-        @include mixin.large {
-            flex-direction: row;
-        }
+
     }
     }
 .formationMobile{
-    @include mixin.large {
-        display: none;
-    }
+
 }

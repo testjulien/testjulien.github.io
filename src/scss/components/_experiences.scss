@@ -6,11 +6,7 @@
     
     padding: 1rem;
     height: 45rem;
-    @include mixin.large {
-            min-width: 30em;
-        padding: 1rem;
-        height: 45rem;
-        }
+
     &__contenu {
         margin: 1rem;
     }
