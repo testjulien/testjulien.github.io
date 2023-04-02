@@ -1,26 +1,33 @@
 @use '../components/mixin';
 
-.information {
-   
-    
-   
-    padding: 1rem;
-    padding-top: 0.5;
+.informations {
+
+    padding: 0.5rem;
     background-color: rgb(59, 59, 59);
     color: white;
+    h2{
+        color: #fab49b;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    h3{
+        color: #fab49b;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p{
+        padding: 0.5rem;
+    }
+    a {
+        color: white;
+        
+    }
 
-    &__style {
-        font-size: 1.1em;
-        margin: 0.25rem;
-        h2{
-            color: #fab49b;
-            font-weight: bolder;
-            
-        }
     
-    }
-    &__list {
-
-    }
-
 }
+
+
+
+
