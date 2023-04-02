@@ -32,6 +32,10 @@
     }
     &__box {
         padding-top: 0.5rem;
+        @media print {
+         display: flex;
+
+        }
           
     }
 }

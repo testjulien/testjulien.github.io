@@ -3,15 +3,30 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.smallDesc {
-    font-size: 0.8em;
-}
-.liens{
-    line-height: 2rem;
+main{
+    @include mixin.large {
+        display: flex;
+        align-items: stretch;
+        h2{
+            padding: 1rem;
+        }
+    }
+    @media print {
+    font-size: 0.9em;
+        .noprint{
+            display: none;
+        }
+
+       }
+
+    
 }
 
 .hidden {
     display: none;
+    @include mixin.large{
+        display: block;
+    }
 
 }
 

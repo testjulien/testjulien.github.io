@@ -5,6 +5,14 @@
     padding: 0.5rem;
     background-color: rgb(59, 59, 59);
     color: white;
+    @include mixin.large {
+        max-width:12.5rem;
+
+    }
+    @media print {
+        color: black;
+
+       }
     h2{
         color: #fab49b;
         font-size: 1.4em;
@@ -22,7 +30,20 @@
     }
     a {
         color: white;
+        @media print {
+            color: black;
+            text-decoration: none;
+   
+           }
         
+    }
+    .special{
+        @include mixin.large{
+            padding-top: 5rem;
+            
+        } 
+
+
     }
 
     

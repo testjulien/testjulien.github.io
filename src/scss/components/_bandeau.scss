@@ -4,10 +4,11 @@
    
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0.25rem;
     background-color: #fab49b;
     color: rgb(59, 59, 59);
+
 
     &__title {
         font-weight: bolder;
@@ -24,6 +25,14 @@
     &__imgBlock {
 
         width: 25%;
+        @include mixin.large {
+            max-width:8rem;
+    
+        }
+        @media print {
+            max-width: 5rem;
+   
+           }
 
         img{
             width: 100%;
