@@ -1,0 +1,31 @@
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            margin: 0.5rem;
+            img{
+                max-width: 5rem;
+                border-radius: 50%;
+                border: 0.25rem white solid;
+            }
+            .logoapigouv{
+                max-width: 10rem;
+                border: none;
+                border-radius: 5%;
+            }
+            .logoapiopenweather{
+                max-width: 10rem;
+                height: 4.7rem;
+                border: none;
+                border-radius: 5%;   
+            }
+        }
+    }
+}

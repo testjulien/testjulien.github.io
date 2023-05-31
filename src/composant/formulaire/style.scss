@@ -1,0 +1,17 @@
+form{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem; 
+    label{
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 0.8em;
+    }
+    
+    div{
+        display: flex;
+        justify-content: space-between;
+  
+    }
+    
+}

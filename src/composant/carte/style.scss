@@ -1,0 +1,43 @@
+.card {
+    transform-style: preserve-3d;
+    transform: perspective(66rem) rotateX(0deg) rotateY(33deg) rotateZ(0deg);
+    padding: 0.5rem;
+
+    border: 3px black solid;
+    border-radius: 0.5rem;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 5px 5px 10px #5a5a5a,
+        -5px -5px 10px #ffffff;
+    margin-top: 1.5rem;
+    min-width: 17rem;
+    &:hover {
+        transform: perspective(0rem) rotateX(0deg) rotateY(0deg);
+    }
+
+    &-title {
+        font-weight: bolder;
+        font-size: 1.2em;
+        text-align: center;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    }
+    &-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card-meteo{
+            text-align: center;
+
+        }
+    }
+    span{
+        font-weight: bolder;
+        text-align: center;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    }
+    
+
+
+
+
+}
