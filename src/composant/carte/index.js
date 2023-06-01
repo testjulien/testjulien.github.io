@@ -5,6 +5,7 @@ export function Carte({ nom, dpt, cp, pop }) {
 
     const [TEMP, setTEMP] = useState("")
     const [METEOcode, setMETEOcode] = useState("")
+    const [METEOdescription, setMETEOdescription] = useState("")
 
     const apiKEY = "767a7cce68ed2b3098d41e24364ec56c"
 
@@ -15,6 +16,7 @@ export function Carte({ nom, dpt, cp, pop }) {
             const data = await response.json();
             setTEMP(data.main.temp)
             setMETEOcode(data.weather[0].icon)
+            setMETEOdescription(data.weather[0].description)
             
           
         } catch (error) {
@@ -26,6 +28,8 @@ export function Carte({ nom, dpt, cp, pop }) {
         fetchWEATHER();
 
     }, [TEMP]);
+
+    
 
     return (<>
 
@@ -45,7 +49,7 @@ export function Carte({ nom, dpt, cp, pop }) {
 
 
             <div className='card-meteo'>
-                <img src={`https://openweathermap.org/img/wn/${METEOcode}@2x.png`} alt="test" ></img>
+                <img src={`https://openweathermap.org/img/wn/${METEOcode}@2x.png`} alt={METEOdescription} ></img>
                 <p><span>{TEMP}</span>°C</p>
             </div>
             

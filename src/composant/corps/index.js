@@ -1,4 +1,4 @@
-import { formatpopulation } from "../../components/Item/formatPopulation";
+
 import "./style.scss"
 
 

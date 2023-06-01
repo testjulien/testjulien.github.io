@@ -15,7 +15,6 @@ export function App() {
   const [CHAMPS, setCHAMPS] = useState("");
   const [useCODE,setuseCODE] = useState(false)
   const [RECHERCHE, setRECHERCHE] = useState("Dordogne");
-  const [VIDE, setVIDE]=useState(true)
 
   const fetchGOUV = async () => {
     if (RECHERCHE.length>2) {
@@ -56,6 +55,8 @@ export function App() {
       fetchGOUV();
     }, [RECHERCHE]);
 
+ 
+
     return (<>
       <header>
         <Titre useCODE={useCODE} />
@@ -65,7 +66,11 @@ export function App() {
         champs={CHAMPS}
         usecode={useCODE}
         changemode={changeMODE}/>
+
       </header>
+
+      {RECHERCHE.length< 3 && <p className='info'>mininum 3 caractére</p>}
+
       <Corps nbresultat={DATA.length} recherche={RECHERCHE} format={changeFORMAT} >
 
         {!APIprete && <h2 className='info'>recherche en cours</h2>}
